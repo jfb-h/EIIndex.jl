@@ -1,0 +1,13 @@
+name = "EIIndex"
+uuid = "fb723711-220c-4689-8b96-c67fc1881f4a"
+authors = ["Jakob Hoffmann"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
