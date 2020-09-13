@@ -3,6 +3,12 @@ uuid = "fb723711-220c-4689-8b96-c67fc1881f4a"
 authors = ["Jakob Hoffmann"]
 version = "0.1.0"
 
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+CategoricalArrays = "324d7699-5711-5eae-9e2f-1d82baa6b597"
+LightGraphs = "093fc24a-ae57-5d10-9952-331d41423f4d"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+
 [compat]
 julia = "1"
 
