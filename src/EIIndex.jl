@@ -1,6 +1,7 @@
 module EIIndex
 
 using LightGraphs
+using LightGraphs.SimpleGraphs
 using Plots: histogram, vline!
 import Plots: plot
 
