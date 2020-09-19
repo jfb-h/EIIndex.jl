@@ -1,17 +1,16 @@
 
 function ei_global(g::SimpleGraph, groups::AbstractVector)
-
     L = ne(g)
-    ext = zeros(L)
+    E = 0
 
     @inbounds for (i, e) in enumerate(edges(g))
-        ext[i] = groups[src(e)] == groups[dst(e)] ? 0 : 1
+        groups[src(e)] == groups[dst(e)] &&  (E += 1)
     end
     
     E = sum(ext)
     I = L - E
 
-    return (E - I) / (E + I)
+    return (E - I) / L
 end
 
 
